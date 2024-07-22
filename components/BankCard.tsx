@@ -11,8 +11,7 @@ export default function BankCard({ account, userName, showBalance = true}: Credi
           <div>
             <h1 className='text-16 font-semibold text-white'>{account.name || userName}</h1>
             <p className='font-ibm-plex-serif font-black text-white'>
-              {/* {formatAmount(account?.currentBalance)} */}
-              1212.12
+              {formatAmount(account?.currentBalance)}
             </p>
           </div>
 
