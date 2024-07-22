@@ -21,12 +21,12 @@ export default function PlaidLink({user, variant}: PlaidLinkProps) {
   }, [user])
   
 
-  const onSuccess = useCallback<PlaidLinkOnSuccess>(async(public_token: string) => {
+  const onSuccess = useCallback<PlaidLinkOnSuccess>( async(public_token: string) => {
     await exchangePublicToken({
       publicToken: public_token,
       user
-    })
-
+    });
+    
     router.push('/')
   }, [user]);
 

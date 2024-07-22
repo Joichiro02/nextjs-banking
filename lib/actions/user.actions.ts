@@ -27,7 +27,6 @@ export const signUp = async({ password, ...userData}: SignUpParams) => {
   let newUserAccount;
 
   try {
-    console.log(email, password, firstName, lastName);
     const { account, database } = await createAdminClient();
     
     newUserAccount = await account.create(
@@ -126,7 +125,7 @@ export const createBankAccount = async({
   accountId,
   accessToken,
   fundingSourceUrl,
-  sharableId
+  shareableId
 }: createBankAccountProps) => {
   try {
     const { database } = await createAdminClient();
@@ -141,12 +140,13 @@ export const createBankAccount = async({
         accountId,
         accessToken,
         fundingSourceUrl,
-        sharableId
+        shareableId
       }
-    )
+    );
 
     return parseStringify(bankAccount);
   } catch (error) {
+    console.log(error);
     
   }
 }
@@ -200,7 +200,7 @@ export const exchangePublicToken = async ({
       accountId: accountData.account_id,
       accessToken,
       fundingSourceUrl,
-      sharableId: encryptId(accountData.account_id),
+      shareableId: encryptId(accountData.account_id),
     });
 
     // Revalidate the path to reflect the changes
