@@ -15,7 +15,7 @@ import { sidebarLinks } from '@/constants';
 import { usePathname } from 'next/navigation';
 import { cn } from '@/lib/utils';
 
-export default function MobileNav() {
+export default function MobileNav({user}:any) {
   const pathName = usePathname();
   return (
     <section className='w-full max-w-[264px]'>
