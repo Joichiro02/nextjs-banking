@@ -15,7 +15,7 @@
   <h3 align="center">A Fintech Bank Application</h3>
 
    <div align="center">
-     Build this project step by step with our detailed tutorial on <a href="https://www.youtube.com/@javascriptmastery/videos" target="_blank"><b>JavaScript Mastery</b></a> YouTube. Join the JSM family!
+     Domain build link <a href="https://nextjs-banking-git-develop-joichiro02s-projects.vercel.app/sign-in"</a>
     </div>
 </div>
 
