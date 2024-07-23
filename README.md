@@ -15,7 +15,7 @@
   <h3 align="center">A Fintech Bank Application</h3>
 
    <div align="center">
-     Clink the link to see the deployed application <a href="https://nextjs-banking-git-develop-joichiro02s-projects.vercel.app/sign-in"target="_blank"><b>Fintech Bank</b></a>
+     Click the link to see the deployed application <a href="https://nextjs-banking-git-develop-joichiro02s-projects.vercel.app/sign-in"target="_blank"><b>Fintech Bank</b></a>
     </div>
 </div>
 
